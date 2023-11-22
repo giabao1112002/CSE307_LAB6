@@ -8,7 +8,7 @@
     <script>
         let books = [
             {
-                "id": 1,
+                "id": "1",
                 "title": "The Alchemist",
                 "image": "thealchemist.webp",
                 "price": 182700,
@@ -17,14 +17,14 @@
             },
 
             {
-                "id": 2,
+                "id": "2",
                 "title": "Learning How to learn",
                 "image": "learning.jpg",
                 "price": 251100,
                 "quantity": 10
             },
             {
-                "id": 3,
+                "id": "3",
                 "title": "Thinking, Fast Slow",
                 "image": "LHTL.jpg",
                 "price": 299700,
@@ -35,7 +35,7 @@
         function Add() {
             document.getElementById('result').innerHTML = '';
             books.push({
-                "id": 4,
+                "id": "4",
                 "title": "Test",
                 "image": "LHTL.jpg",
                 "price": 299700,
@@ -70,13 +70,14 @@
         function Sort() {
             books.sort(function (a, b) { return a.price - b.price });
         }
+
         function Search() {
             let name = document.getElementById('txt').value;
             let result = '';
 
             for (i = 0; i < books.length; i++) {
                 if (books[i].title.includes(name)) {
-                    result += 
+                    result +=
                         ` <div style='flex:30%'>
                         <p id='title'>${books[i].title}</p>
                         <img id='img' width=100
@@ -91,10 +92,27 @@
             }
             document.getElementById('result').innerHTML = result;
         }
+        
         function Delete() {
-            let id= document.getElementById('txtD').value;
-            //let result= document.getElementById('result').innerHTML;
+            let id = document.getElementById('txtD').value;
+            let result = '';
 
+            for (i = 0; i < books.length; i++) {
+                if (!(books[i].id.includes(id))) {
+                    result +=
+                        ` <div style='flex:30%'>
+            <p id='title'>${books[i].title}</p>
+            <img id='img' width=100
+                src='${books[i].image}' />
+            <p id='price'>
+                ${books[i].price} VND
+            </p>
+        </div>`
+
+                };
+
+            }
+            document.getElementById('result').innerHTML = result;
         }
     </script>
 </head>
