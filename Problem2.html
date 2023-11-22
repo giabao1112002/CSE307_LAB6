@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ShowData() {
+            
+            let p11 = document.getElementById('p11').innerText;
+            document.getElementById('p12').innerHTML = parseInt(p11);
+            document.getElementById('p13').innerHTML = parseFloat(p11);
+            document.getElementById('p14').innerHTML = Number(p11);
+            document.getElementById('p15').innerHTML = +p11;
+            document.getElementById('p16').innerHTML = parseInt(p11) ^ 0;
+
+            let p21 = document.getElementById('p21').innerText;
+            document.getElementById('p22').innerHTML = parseInt(p21);
+            document.getElementById('p23').innerHTML = parseFloat(p21);
+            document.getElementById('p24').innerHTML = Number(p21);
+            document.getElementById('p25').innerHTML = +p21;
+            document.getElementById('p26').innerHTML = parseInt(p21) ^ 0;
+
+            let p31 = document.getElementById('p31').innerText;
+            document.getElementById('p32').innerHTML = parseInt(p31);
+            document.getElementById('p33').innerHTML = parseFloat(p31);
+            document.getElementById('p34').innerHTML = Number(p31);
+            document.getElementById('p35').innerHTML = +p31;
+            document.getElementById('p36').innerHTML = parseInt(p31) ^ 0;
+
+            let p41 = document.getElementById('p41').innerText;
+            document.getElementById('p42').innerHTML = parseInt(p41);
+            document.getElementById('p43').innerHTML = parseFloat(p41);
+            document.getElementById('p44').innerHTML = Number(p41);
+            document.getElementById('p45').innerHTML = +p41;
+            document.getElementById('p46').innerHTML = parseInt(p41) ^ 0;
+
+            let p51 = document.getElementById('p51').innerText;
+            document.getElementById('p52').innerHTML = parseInt(p51);
+            document.getElementById('p53').innerHTML = parseFloat(p51);
+            document.getElementById('p54').innerHTML = Number(p51);
+            document.getElementById('p55').innerHTML = +p51;
+            document.getElementById('p56').innerHTML = parseInt(p51) ^ 0;
+
+            let p61 = document.getElementById('p61').innerText;
+            document.getElementById('p62').innerHTML = parseInt(p61);
+            document.getElementById('p63').innerHTML = parseFloat(p61);
+            document.getElementById('p64').innerHTML = Number(p61);
+            document.getElementById('p65').innerHTML = +p61;
+            document.getElementById('p66').innerHTML = parseInt(p61) ^ 0;
+        }
+    </script>
+</head>
+
+<body >
+    
+    <table border="1">
+        <tr>
+            <td>str</td>
+            <td>parseInt(str)</td>
+            <td>parseFloat(str)</td>
+            <td>Number(str)</td>
+            <td>+str</td>
+            <td>str | 0</td>
+        </tr>
+        <tr>
+            <td>
+                <p id="p11">1234</p>
+            </td>
+            <td>
+                <p id="p12">?</p>
+            </td>
+            <td>
+                <p id="p13">?</p>
+            </td>
+            <td>
+                <p id="p14">?</p>
+            </td>
+            <td>
+                <p id="p15">?</p>
+            </td>
+            <td>
+                <p id="p16">?</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="p21">1234abc</p>
+            </td>
+            <td>
+                <p id="p22">?</p>
+            </td>
+            <td>
+                <p id="p23">?</p>
+            </td>
+            <td>
+                <p id="p24">?</p>
+            </td>
+            <td>
+                <p id="p25">?</p>
+            </td>
+            <td>
+                <p id="p26">?</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p id="p31">0.15</p>
+            </td>
+            <td>
+                <p id="p32">?</p>
+            </td>
+            <td>
+                <p id="p33">?</p>
+            </td>
+            <td>
+                <p id="p34">?</p>
+            </td>
+            <td>
+                <p id="p35">?</p>
+            </td>
+            <td>
+                <p id="p36">?</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="p41">3.14ivan</p>
+            </td>
+            <td>
+                <p id="p42">?</p>
+            </td>
+            <td>
+                <p id="p43">?</p>
+            </td>
+            <td>
+                <p id="p44">?</p>
+            </td>
+            <td>
+                <p id="p45">?</p>
+            </td>
+            <td>
+                <p id="p46">?</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="p51">Infinity	</p>
+            </td>
+            <td>
+                <p id="p52">?</p>
+            </td>
+            <td>
+                <p id="p53">?</p>
+            </td>
+            <td>
+                <p id="p54">?</p>
+            </td>
+            <td>
+                <p id="p55">?</p>
+            </td>
+            <td>
+                <p id="p56">?</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="p61">99999999999999999999</p>
+            </td>
+            <td>
+                <p id="p62">?</p>
+            </td>
+            <td>
+                <p id="p63">?</p>
+            </td>
+            <td>
+                <p id="p64">?</p>
+            </td>
+            <td>
+                <p id="p65">?</p>
+            </td>
+            <td>
+                <p id="p66">?</p>
+            </td>
+        </tr>
+        
+    </table>
+    <input type="button" onclick='ShowData()' value="show" />
+
+</body>
+
+</html>
